@@ -1,0 +1,81 @@
+SUBLEQ++ Interpreter Documentation
+
+SUBLEQ ++ is a custom programming language I have written. Keeo in mind it is not a superset of SUBLEQ. However, converting a SUBLEQ program to SUBLEQ++ is very simple and intuitive. It has been named so as SUBLEQ was thee inspiration for this language.
+
+1. Installation
+There is no formal installation process for the interpreter. Simply ensure that you have a Python environment set up to run the provided interpreter script. You have to input your file name along wih the .txt extension.
+
+2. Getting Started
+To start using the interpreter, follow these basic steps:
+
+3. Syntax
+
+4.1 Inputs
+NIN A: Takes a numeric input and stores it in the variable at index A.
+
+AIN A: Takes a string input, converts it into ASCII, and stores it in the variable at index A.
+
+4.2 Outputs
+NOUT A: Outputs the numeric value stored at the variable index A.
+
+AOUT A: Outputs the ASCII representation of the value stored at the variable index A.
+
+4.3 Arithmetic Functions
+ADD R A B: Adds the values stored at variable indices A and B and stores the result in the variable at index R.
+
+SUB R A B: Subtracts the value at variable index B from the value at variable index A and stores the result in the variable at index R.
+
+MUL R A B: Multiplies the values stored at variable indices A and B and stores the result in the variable at index R.
+
+DIV R A B: Divides the value at variable index A by the value at variable index B and stores the result in the variable at index R.
+
+MOD R A B: Computes the remainder of the division of the value at variable index A by the value at variable index B and stores the result in the variable at index R.
+
+EXP R A B: Raises the value at variable index A to the power of the value at variable index B and stores the result in the variable at index R.
+
+FLD R A B: Divides the value at variable index A by the value at variable index B and stores the remainder in the variable at index R.
+
+4.4 Conditional Functions
+EQA R A B: Checks if the values stored at variable indices A and B are equal and stores the result in the variable at index R.
+
+NEQ R A B: Checks if the values stored at variable indices A and B are not equal and stores the result in the variable at index R.
+
+GT R A B: Checks if the value at variable index A is greater than the value at variable index B and stores the result in the variable at index R.
+
+LT R A B: Checks if the value at variable index A is less than the value at variable index B and stores the result in the variable at index R.
+
+GEQ R A B: Checks if the value at variable index A is greater than or equal to the value at variable index B and stores the result in the variable at index R.
+
+LEQ R A B: Checks if the value at variable index A is less than or equal to the value at variable index B and stores the result in the variable at index R.
+
+4.5 Logical Functions
+AND R A B: Performs a logical AND operation on the boolean values stored at variable indices A and B and stores the result in the variable at index R.
+
+OR R A B: Performs a logical OR operation on the boolean values stored at variable indices A and B and stores the result in the variable at index R.
+
+XOR R A B: Performs a logical XOR operation on the boolean values stored at variable indices A and B and stores the result in the variable at index R.
+
+XNOR R A B: Performs a logical XNOR operation on the boolean values stored at variable indices A and B and stores the result in the variable at index R.
+
+NAND R A B: Performs a logical NAND operation on the boolean values stored at variable indices A and B and stores the result in the variable at index R.
+
+NOR R A B: Performs a logical NOR operation on the boolean values stored at variable indices A and B and stores the result in the variable at index R.
+
+4.6 Control Functions
+JMP L: Jumps to the specified line number L.
+
+JIC L C: Jumps to the specified line number L if the value at variable index C is equal to 1.
+
+4.7 Miscellaneous Functions
+SET A B: Sets the variable at index A to the integer / float B
+
+COPY A B: Sets the variable at index A to the value at index B
+
+VAR A: This can be a part of any function. It returns the value at index A.
+
+5. Other Info
+
+Variables are set dynamically as needed.
+Booleans are stored as integers 1 (True) and 0 (False)
+This is a Turing Complete language
+As said above, it is not a superset of SUBLEQ despite the name
